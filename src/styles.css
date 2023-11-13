@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* html {
+    display: flex;
+    justify-content: center;
+} */
+
+body {
+    background-color: #222;
+    color: #fff;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 90vw; */
+}
+
+/*  -- --- -- --- -- --- -- Header -- --- -- --- -- --- -- */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 97vw;
+}
+
+.navbar-logo-divider {
+    display: none;
+}
+
+.navbar-logo {
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar-cart {
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s background-color;
+    cursor: pointer;
+}
+
+.navbar-cart:hover {
+    background-color: #000000;
+}
+
+/*  -- --- -- --- -- --- -- Products -- --- -- --- -- --- -- */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    background-color: #444444;
+    border-radius: 10px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 425px;
+    overflow: hidden;
+}
+
+/*  -- --- -- --- -- --- -- Items -- --- -- --- -- --- -- */
+
+.products-item {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min-content;
+    margin: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.products-item img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.products-item-price {
+    font-weight: bold;
+}
+
+.products-item-btn {
+    background-color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
