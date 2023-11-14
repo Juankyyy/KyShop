@@ -56,12 +56,14 @@ header {
     cursor: pointer;
     padding: 5px;
     border-radius: 5px;
-    transition: 0.5s background-color, color;
+    background-color: #00ff8f;
+    color: #222;
+    transition: 0.3s background-color, color;
 }
 
 .navbar-logo:hover {
-    background-color: #00ff8f;
-    color: #222;
+    background-color: #444444;
+    color: #fff;
 }
 
 /*  -- --- -- Cart -- --- -- */
