@@ -54,19 +54,28 @@ header {
     gap: 5px;
     font-size: 25px;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s background-color, color;
+}
+
+.navbar-logo:hover {
+    background-color: #00ff8f;
+    color: #222;
 }
 
 /*  -- --- -- Cart -- --- -- */
 
 .navbar-cart-icon {
-    padding: 7px;
+    padding: 5px 6px;
     border-radius: 5px;
     transition: 0.3s background-color;
     cursor: pointer;
 }
 
 .navbar-cart-icon:hover {
-    background-color: #000000;
+    background-color: #00ff8f;
+    color: #222;
 }
 
 .navbar-cart-icon {
@@ -79,24 +88,25 @@ header {
     align-items: center;
     width: 15px;
     height: 15px;
-    font-size: 12px;
-    background-color: #000;
+    font-size: 11px;
+    background-color: #222;
     color: #fff;
     border-radius: 50%;
     position: absolute;
     bottom: 2px;
-    right: 0;
+    right: 1px;
 }
 
 .cart-content {
     position: absolute;
     top: 70px;
     right: 40px;
-    background-color: #333;
-    color: #fff;
+    background-color: #00ff8f;
+    color: #000;
     width: 400px;
     z-index: 1;
     border-radius: 5px;
+    box-shadow: 0px 10px 20px #000;
 }
 
 .cart-products {
@@ -104,7 +114,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
 .cart-products-info {
@@ -121,7 +131,7 @@ header {
 }
 
 .icon-close:hover {
-    color: red;
+    color: #cc2929;
 }
 
 .cart-total {
@@ -150,7 +160,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 425px;
+    height: 420px;
     overflow: hidden;
 }
 
@@ -165,22 +175,36 @@ main {
     width: min-content;
     margin: 20px;
     border-radius: 10px;
-    object-fit: cover;
 }
 
-.products-item img {
-    width: 250px;
+.products-item-img {
+    overflow: hidden;
     border-radius: 5px;
+    width: 250px;
+    height: 250px;
 }
 
-.products-item-price {
-    font-weight: bold;
+.products-item-img img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s transform;
+}
+
+.products-item-img img:hover {
+    transform: scale(1.1);
 }
 
 .products-item-btn {
-    background-color: #000000;
+    background-color: #111;
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.4s background-color, color;
+}
+
+.products-item-btn:hover {
+    background-color: #00ff8f;
+    color: #222;
 }
